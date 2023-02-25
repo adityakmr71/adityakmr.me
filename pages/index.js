@@ -1,18 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
+import { IntroMainContent, NavigationBar } from "../components";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const isCountDown = true;
-
-const MainContainer = () => {
-  return (
-    <div>
-      <p>Hello world</p>
-    </div>
-  );
-};
 export default function Home() {
   return (
     <>
@@ -23,8 +15,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="h-screen">
+        <NavigationBar />
         <div className="container mx-auto pt-10 flex gap-4 justify-center items-center h-screen">
-          <h1>Hello world</h1>
+          <IntroMainContent />
         </div>
       </main>
     </>
