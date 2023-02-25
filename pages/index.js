@@ -1,10 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
-import styles from "../styles/Home.module.css";
-import NavBar from "../components/NavBar";
-import LaunchCountdown from "../container/LaunchContdown";
-import SocialContainer from "../container/SocialContainer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,14 +24,7 @@ export default function Home() {
       </Head>
       <main className="h-screen">
         <div className="container mx-auto pt-10 flex gap-4 justify-center items-center h-screen">
-          {isCountDown ? (
-            <LaunchCountdown days={30} hours={10} minutes={0} seconds={0} />
-          ) : (
-            <>
-              <NavBar />
-              <MainContainer />
-            </>
-          )}
+          <h1>Hello world</h1>
         </div>
       </main>
     </>
